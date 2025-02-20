@@ -25,8 +25,10 @@ def find_path_algorithm(start, end):
     # Initializing a queur with the start
     queue = deque([(start[0], start[1])])
 
-    # All neighours directions =
-    directions = [(-1,  0), (1,0), (0,-1), (0,1)]
+    # All neighours directions = top, right, bottom and left.
+    # directions = [(-1,  0), (1,0), (0,-1), (0,1)]
+    directions = [(-1,  0), (1,0), (0,-1), (0,1), (-1,-1), (1,-1), (1,1), (-1,1)]
+
     
     # Iterating queue and adding neighbouring grid to the queue.
     while queue:
